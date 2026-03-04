@@ -1,0 +1,147 @@
+<html lang="es">
+<title>Sebas Cabero, tiempo transcurrido (serie Neofascismo), 2019</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
+<meta http-equiv="Content-Language" content="es"/>    
+<meta name="Keywords" content="arte contemporáneo,sebas cabero,españa,madrid,arte antifascista"/>
+<meta name="Description" content="Un proyecto artístico de Sebas Cabero"/>
+<meta name="Distribution" content="global"/>
+<meta name="Robots" content="all"/>   
+<meta name="viewport" content="initial-scale=1, width=device-width">    
+<head>
+<style type="text/css">
+    
+a:link, a:hover, a:active, a:visited {
+color: #373737;
+text-decoration:underline;    
+}
+    
+@font-face {
+    font-family: 'Game Over Regular';
+    src: url('game_over.eot');
+    src: local('Game Over Regular'), local('Game-Over-Regular'),
+         url('game_over.eot?#iefix') format('embedded-opentype'),
+         url('game_over.woff') format('woff'),
+         url('game_over.ttf') format('truetype'),
+         url('game_over.otf') format('opentype'),
+         url('game_over.svg#game-over-regular') format('svg');
+}    
+body {background-color: #000000}    
+.padre {
+  height: 95%;   
+  width: 100%;    
+  margin-right: auto;
+  margin-left: auto;    
+  /*IMPORTANTE*/
+  display: flex;   
+  justify-content: center;
+  align-items: center;
+}
+
+.hijo {    
+  width: 500px;  
+  height: auto;
+  align-items: center;
+}   
+
+footer {   
+  position: relative;       
+  width: 100%;  
+  height: auto;
+} 
+.enlace { 
+  font: bold 90% monospace;    
+  color: #373737;    
+  width: 100%;  
+  height: auto;    
+  text-align: center;    
+}     
+
+span {
+  font-family: 'Game Over Regular';
+  line-height: 0.5em;    
+  font-size: 6em;
+  color: #FFFFFF;
+}
+    
+.frase {
+  font-family: 'Game Over Regular';
+  margin-top: -0.25em;    
+  line-height: 0.5em;    
+  font-size: 3em;
+  color: red;
+}     
+</style>
+
+<script type="text/javascript">
+
+	/*function detenerse()
+	{
+		clearInterval(cronometro);
+	}*/
+
+	var timeout=0;
+	var year=0;
+	var day=0;
+
+    function funcionando()
+    {
+
+      var today = new Date("December 03, 2019 10:00:00").getTime();
+      var actual = new Date().getTime();
+      var diff=new Date(actual-today);
+      var aux = (diff/(1000*60*60*24)).toString();
+
+      // mostramos la diferencia entre la fecha actual y la inicial
+      var day=aux.substr(0,aux.indexOf('.')); 
+      var hours=LeadingZero(diff.getUTCHours());
+      var minutes=LeadingZero(diff.getUTCMinutes());
+      var seconds=LeadingZero(diff.getUTCSeconds());
+
+    	if(day==365)
+    	{
+    		year++;
+    		day = 0;  
+    	}       
+
+      document.getElementById('horas').innerHTML = hours+'h';
+      document.getElementById('minutos').innerHTML = minutes+'m';
+      document.getElementById('segundos').innerHTML = seconds+'s';
+      document.getElementById('dias').innerHTML = day+' d&iacute;as';
+
+      // Indicamos que se ejecute esta función nuevamente dentro de 1 segundo
+      timeout=setTimeout("funcionando()",1000);
+    }
+ 
+    /* Funcion que pone un 0 delante de un valor si es necesario */
+    function LeadingZero(Time)
+    {
+        return (Time < 10) ? "0" + Time : + Time;
+    }
+ 
+    window.onload=function()
+    {
+        funcionando();
+    }
+
+</script>
+
+</head>
+<body>
+
+<div class="padre">
+  <div class="hijo">
+  	<div align="center">
+	<p><span id="dias">0 d&iacute;as</span></p>
+	<p><span id="horas">0h</span>
+       <span>:</span>
+       <span id="minutos">0m</span>
+       <span>:</span>
+       <span id="segundos">0s</span></p>      
+      </div>     
+	</div>
+</div>
+<footer><p class="enlace"><a href="https://sebascabero.com" target="_blank">sebascabero.com</a></p></footer>     
+	
+	<!--<input id="iniciar" type="button" onclick="detenerse()" value="Detener"/>-->
+</body>
+</html>
