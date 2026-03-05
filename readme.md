@@ -4,7 +4,7 @@ The counter began on December 3, 2019, with the constitution of the Cortes Gener
 The artwork can be viewed at: https://tiempotranscurrido.github.io/, where it is hosted permanently.<br/><br/>
 
 [ES]<br/>
-<i>Tiempo transcurrido</i> es una obra de net.art que registra en tiempo real todos y cada uno de los días, horas, minutos y segundos durante los cuales un partido político abiertamente fascista ha sido admitido en el sistema democrático español y cuenta con representación parlamentaria en las Cortes Generales por primera vez desde la restauración de la democracia en 1977.<br/>
-El contador se inició el 3 de diciembre de 2019, con la constitución de las Cortes Generales, que dio comienzo a la XIV Legislatura.<br/>
-La obra de arte puede consultarse en: https://tiempotranscurrido.github.io/, donde se encuentra alojada de manera perpetua.<br/><br/>
+<i>Tiempo transcurrido</i>es una obra que registra en tiempo real cada uno de los días, horas, minutos y segundos durante los cuales un partido político abiertamente fascista ha pasado a formar parte del sistema democrático español, obteniendo representación parlamentaria en las Cortes Generales por primera vez desde la restauración de la democracia en 1977.<br/>
+El contador se inició el 3 de diciembre de 2019, con la constitución de las Cortes Generales que dio comienzo a la XIV Legislatura.<br/>
+La obra de arte puede consultarse en https://tiempotranscurrido.github.io/<br/><br/>
 
